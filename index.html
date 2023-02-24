@@ -1,0 +1,140 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="description" content="Playstation Plus Survey Form">
+    
+
+  </head>
+  <body>
+ <div class="container">
+   
+ <header class="header">
+
+    <h1 id="title" class="text-center"> Playstaion Store Survey Form </h1>
+
+    <p id="description" class="desciption text-center">Thank you for taking the time to help us get the store better for you and many others</p>
+
+  </header>
+
+  <form id="survey-form">
+
+  <div class="form-group">
+
+  <label id="name-label" for="name">Name</label>
+  <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required="">
+
+  </div>
+
+<div class="form-group">
+
+  <label for="email" id="email-label">E-mail:</label>
+  <input type="email" id="email" name="email" class="form-control" placeholder="Enter your e-mail"  required="">
+
+  </div>
+
+  <div class="form-group">
+
+   <label for="number" id="number-label" >Age:</label>
+  <input type="number" id="number" name="number" min="1" max="99" placeholder="Enter your age" class="form-control">
+
+  </div>
+
+  <div class="form-group">
+
+  <label for="gameTag" id="game-Tag"> Game-tag:</label>
+  <input type="text" id="gameTag" name="gameTag" placeholder="Enter your #Game-tag"  required="" class="form-control">
+
+  </div>
+
+  <div class="form-group">
+
+    <p>What kind of games do you play?</p>
+
+    <select id="dropdown" name="role" class="form-control" required="">
+            <option disabled="" selected="" value="">Select Game Style</option>
+            <option value="rpg">RPG</option>
+            <option value="shooting">Shooting</option>
+            <option value="simulater">Simulater</option>
+            <option value="adventure">Adventure</option>
+            <option value="fighting">Fighting</option>
+            <option value="other">Other</option>
+          </select>
+    </div>
+
+  <div class="form-group">
+
+    <p>Would you recommend Playstion to a friend?</p>
+
+    <label>
+      <input name="user-recommend" value="definitely" type="radio" class="input-radio" checked="">
+      Definitely
+      </label>
+
+    <label>
+      <input name="user-recommend" value="definitely" type="radio" class="input-radio" checked="">
+      Maybe
+      </label>
+    
+    <label>
+      <input name="user-recommend" value="definitely" type="radio" class="input-radio" checked="">
+      Not sure
+      </label>
+
+    </div>
+
+<div class="form-group">
+
+    <p>What is your favorite feature of the Playstion store?</p>
+
+    <select id="most-like" name="mostLike" class="form-control" required="">
+            <option disabled="" selected="" value="">Select an option</option>
+            <option value="manyGames">Many games</option>
+            <option value="freeGames">Free games</option>
+            <option value="psPlus">Playstion Plus</option>
+          </select>
+    </div>
+
+    <div class="form-group">
+
+      <p>What would you like to see improved? (Check all that apply)</p>
+
+ <label>
+   <input type="checkbox" id="freGames" name="freeGames" value="freeGames" class="input-checkbox">
+  Playstation Store Free Games</label>
+
+  <label>
+    <input type="checkbox" id="membership" name="membership" value="member" class="input-checkbox">
+  Playstation Plus Membership</label>
+
+ <label>
+   <input type="checkbox" id="navi" name="navi" value="navigating" class="input-checkbox">
+  The Navigating</label>
+
+  <label><input type="checkbox" id="layout" name="layout" value="layout" class="input-checkbox">
+  The Layout</label>
+
+ <label> 
+   <input type="checkbox" id="discounts" name="discounts" value="discounts" class="input-checkbox">
+  More Discounts</label>
+
+      </div>
+
+      <div class="form-group">
+
+        <p>Any comments or suggestions?</p>
+        <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comment here..."></textarea>
+
+        </div>
+
+    <div class="form-group">
+          <button type="submit" id="submit" class="submit-button">
+            Submit
+          </button>
+        </div>
+ </form>
+</div>
+  </body>
+  
+</html>
